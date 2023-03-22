@@ -17,6 +17,13 @@
         android:textAllCaps="false"
         android:textSize="15sp" />
 
+    <Button
+        android:id="@+id/backSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_space"
+        android:textAllCaps="true"/>
+
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="match_parent"

@@ -9,12 +9,14 @@ import androidx.fragment.app.FragmentTransaction
 class MainActivity : AppCompatActivity() {
 
     lateinit var replace: Button
+    lateinit var backSpace: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         replace = findViewById(R.id.buttonReplace)
+        backSpace = findViewById(R.id.backSpace)
 
         val fragmentManager: FragmentManager = supportFragmentManager
         val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
@@ -35,6 +37,19 @@ class MainActivity : AppCompatActivity() {
             secondFragmentTransaction.replace(R.id.frame,secondFragment)
 
             secondFragmentTransaction.commit()
+
+        }
+
+        backSpace.setOnClickListener {
+
+            val firstFragmentManager: FragmentManager = supportFragmentManager
+            val firstFragmentTransaction: FragmentTransaction = firstFragmentManager.beginTransaction()
+
+            val firstFragment = FirstFragment()
+
+            firstFragmentTransaction.replace(R.id.frame,firstFragment)
+
+            firstFragmentTransaction.commit()
 
         }
 
