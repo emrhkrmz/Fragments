@@ -2,4 +2,6 @@
     <string name="app_name">Fragments</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="my_first_fragment">My First Fragment</string>
+    <string name="my_second_fragment">My Second Fragment</string>
+    <string name="replace_second_fragment">Replace Second Fragment</string>
 </resources>
