@@ -36,6 +36,14 @@ class MainActivity : AppCompatActivity() {
 
             secondFragmentTransaction.replace(R.id.frame,secondFragment)
 
+            secondFragmentTransaction.addToBackStack(null)
+            //bu yöntem yığını boş çalıştırır
+            //yığına eklemez
+            //ilk parça kapanmayacak ve eklenecek
+            //yeni bir parça açarken eski parçayı yığında tutmak için işlem yapmam gerektiği anlamına gelir
+            //MySecondFragment'ta iken geri tuşuna bastığımızda MyFirstFragment yığına eklenir ve MyFirstFragment açılır.
+            //MyfirstFragment'ta iken geri tuşuna bastığımız da ise uygulama kapanır.
+
             secondFragmentTransaction.commit()
 
         }
