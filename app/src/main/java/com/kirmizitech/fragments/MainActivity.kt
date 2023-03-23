@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
             val firstFragmentManager: FragmentManager = supportFragmentManager
             val firstFragmentTransaction: FragmentTransaction = firstFragmentManager.beginTransaction()
-
+    
             val firstFragment = FirstFragment()
 
             firstFragmentTransaction.replace(R.id.frame,firstFragment)
