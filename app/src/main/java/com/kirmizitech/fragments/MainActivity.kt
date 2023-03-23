@@ -59,6 +59,13 @@ class MainActivity : AppCompatActivity() {
 
             firstFragmentTransaction.commit()
 
+            firstFragmentTransaction.addToBackStack(null)
+            /* Kendi tanımlamış olduğumuz Back Space tuşuyla,
+            SecondFrafment'tan MyFirstFragment'a geçiş yaptığımızda ise;
+            Telefonumuzun geri tuşuna bastığımızda yığına MySecondFragment'ı yüklediği için,
+            MySecondFragment sayfasını açacaktır.
+            */
+
         }
 
     }
